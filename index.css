@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.padded-content {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 4.5rem;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    margin-right: 0.5rem;
+}
+
+a {
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:hover {
+    color: #292054;
+}
+
+header {
+}
+
+.logo {
+    float: left;
+    max-width: 100px;
+}
+
+nav {
+    float: right;
+    top: 0;
+}
+
+nav div {
+    display: inline-block;
+}
+
+.navbutton {
+    display: none;
+}
+
+.tab {
+    font-size: 12px;
+    margin: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+main h1 {
+    width: 75%;
+}
+
+.main-backdrop {
+    display: inline;
+    position: relative;
+    float: right;
+    max-width: 70%;
+    z-index: -1;
+    margin-top: -10%;
+}
+
+.small-text {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #292054;
+}
+
+.button-small a {
+    margin: 0.5rem;
+    padding: 0.8rem;
+    color:#ffffff;
+    text-decoration: none;
+    background-color: #3f327a;
+}
+
+.button-small a:hover {
+    background-color: #292054;
+}
+
+.button-large a {
+    margin-top: 5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #3f327a;
+    float: left;
+}
+
+.button-large a:hover {
+    background-color: #292054;
+}
+
+.button-large-white a {
+    position: relative;
+    margin-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color:#3f327a;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    float: left;
+    transform: translateY(70%);
+}
+
+span {
+    color: #3f327a;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article img {
+    max-width: 360px;
+    overflow: hidden;
+}
+
+.wrapper {
+    display:flex;
+    position: relative;
+    max-width: 360px;
+}
+
+.overlay {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(195, 46, 65, 0.25);
+}
+
+.cat {
+    filter: grayscale(100%);
+    z-index: -1;
+}
+
+.pretty-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3f327a;
+}
+
+.wide-image {
+    max-width: 750px;
+}
+
+.about-text {
+    margin-top: 3rem;
+}
+
+#about-left {
+    float: left;
+    width: 35%;
+}
+
+#about-right {
+    float: right;
+    width: 50%;
+}
+
+section:not(#ready) {
+    clear: both;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+#ready {
+    clear: both;
+    color: #ffffff;
+    min-height: 15rem;
+    background-color: #3f327a;
+    background-image: url(background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 3rem;
+}
+
+.ready-content {
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+.ready-header {
+    width: 60%%;
+    float: left;
+}
+
+.small-text-white {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+footer {
+    padding-bottom: 2rem;
+}
+
+#footer-1 {
+    clear: both;
+    float: left;
+    color: #4a4a4a;
+}
+
+#footer-2 {
+    float: right;
+    color: #4a4a4a;
+}
+
+sup {
+    padding-top: 4rem;
+}
+
+@media (max-width: 1000px) {
+    body {
+    }
+    .padded-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .column {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbutton {
+        display: inline-block;
+        margin: auto;
+        float: right;
+        width: 20px;
+    }
+    #ready {
+        height: 20rem;
+    }
+    .button-large-white a {
+        transform: none;
+    }
+}
